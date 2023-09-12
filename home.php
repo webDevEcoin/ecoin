@@ -2,10 +2,7 @@
 include "inc/header.php";
 $data = ["img/001.jpg","img/002.jpg","img/003.jpg"];
 ?>
-<form action="" method="get">
-<input type="text" name="nom">
-<button type="submit">Goooo</button>
-</form>
+
 <!-- <div id="carouselExample" class="carousel slide">
   <div class="carousel-inner">
     <?php
@@ -31,6 +28,12 @@ endforeach;
   </button>
 </div> -->
 <?php
+
+
+echo "<pre>";
+print_r($_GET);
+echo "</pre>";
+
 //echo @$_GET['page'];
 $p  = (isset($_GET['page']))?$_GET['page']:'home';
 //echo $p;

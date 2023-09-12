@@ -1,5 +1,4 @@
 <?php
-
 $products = [
 ["img/001.jpg","welcom To Ecoin1"],
 ["img/001.jpg","welcom To Ecoin2"],
@@ -30,7 +29,5 @@ endforeach;
 ?>
 </div>
 </div>
-
-
 
 
