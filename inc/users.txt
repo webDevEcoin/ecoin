@@ -1,0 +1,4 @@
+admin1@gmail.com|12346567888|admin
+user1@gmail.com|12346567888|user
+admin2@gmail.com|12346567888|admin
+user2@gmail.com|12346567888|user

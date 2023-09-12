@@ -11,19 +11,17 @@ if($v=="ok"){
    $user = trim($user);
    $pass = trim($pass);
    $role= getRole($user,$pass,$lists);
-  echo $role ;
+  //echo $role ;
      if($role !=-1):
+      $_SESSION["user"] = md5($user.$role);
         switch ($role) {
           case "admin":
-            $_SESSION["user"] = md5($user.$role);
             header("Location:admin/dashboard.php");
             break;
           case "user":
-            $_SESSION["user"] = md5($user.$role);
             header("Location:admin/index.php");
             break;
           default:
-          $_SESSION["user"] = md5($user.$role);
           header("Location:admin/logout.php");
             break;
         }
